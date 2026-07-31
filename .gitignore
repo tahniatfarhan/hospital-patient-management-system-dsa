@@ -1,0 +1,13 @@
+*.o
+*.obj
+*.exe
+*.out
+build/
+bin/
+obj/
+Debug/
+Release/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
