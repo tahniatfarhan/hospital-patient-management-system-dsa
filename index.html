@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Patient Management System (C++ DSA) - Project Showcase</title>
+    <title>Hospital Patient Management System (C++ DSA) - Recruiter Portfolio Showcase</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="disclaimer-banner">
-        <i class="fa-solid fa-circle-info"></i> This interactive showcase demonstrates the architecture, workflow, implementation and major features of the original project.
+        <i class="fa-solid fa-shield-halved"></i> This interactive showcase demonstrates the architecture, workflow, and key functionality of the original implementation. The complete source code is available in this repository.
     </div>
 
     <header class="hero">
@@ -19,76 +19,129 @@
             <h1>Hospital Patient Management System (C++ DSA)</h1>
             <p class="hero-tagline">High-performance C++17 patient triage system benchmarking Binary Search Trees (BST) vs Self-Balancing AVL Trees with RAII memory safety.</p>
             <div class="cta-group">
-                <a href="https://github.com/tahniatfarhan/hospital-patient-management-system-dsa" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> View Source Code</a>
-                <a href="#demo" class="btn btn-secondary"><i class="fa-solid fa-play"></i> Explore Interactive Demo</a>
+                <a href="#demo" class="btn btn-primary"><i class="fa-solid fa-play"></i> Live Interactive Demo</a>
+                <a href="https://github.com/tahniatfarhan/hospital-patient-management-system-dsa" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                <a href="https://github.com/tahniatfarhan/hospital-patient-management-system-dsa#readme" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-book"></i> Documentation</a>
             </div>
         </div>
     </header>
 
     <section class="container">
-        <h2 class="section-title">Key Engineering Features</h2>
-        <p class="section-subtitle">Core capabilities and technical standards demonstrated in this repository.</p>
+        <h2 class="section-title">Project Overview</h2>
+        <p class="section-subtitle">Understanding the background, rationale, and target engineering domain.</p>
+        
+        <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-circle-question"></i></div>
+                <h3>What It Is</h3>
+                <p>A high-performance C++ data structures system comparing unbalanced BSTs against self-balancing AVL trees.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <h3>Why It Was Built</h3>
+                <p>Built to demonstrate algorithmic performance optimization, height-balancing, and RAII dynamic memory cleanup.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                <h3>Real-World Problem</h3>
+                <p>Prevents O(N) linear time degradation on sorted patient ID insertions by enforcing O(log N) tree balance.</p>
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">What I Personally Implemented</h2>
+        <p class="section-subtitle">Specific engineering contributions, architecture design, and features developed by Tahniat Farhan.</p>
+        <div class="contributions-grid"><div class="contribution-item"><i class="fa-solid fa-circle-check" style="color:var(--accent-green); margin-right:8px;"></i> Modularized monolithic C++ implementation into clean headers (`include/BST.hpp`, `include/AVLTree.hpp`).</div><div class="contribution-item"><i class="fa-solid fa-circle-check" style="color:var(--accent-green); margin-right:8px;"></i> Implemented self-balancing AVL tree Left/Right rotations maintaining O(log N) worst-case lookup time.</div><div class="contribution-item"><i class="fa-solid fa-circle-check" style="color:var(--accent-green); margin-right:8px;"></i> Added RAII post-order recursive destructors (`~BST()`, `~AVLTree()`) guaranteeing zero dynamic memory leaks.</div><div class="contribution-item"><i class="fa-solid fa-circle-check" style="color:var(--accent-green); margin-right:8px;"></i> Created CMake build pipeline with automated unit tests benchmarking BST vs AVL performance.</div></div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Skills & Technologies Demonstrated</h2>
+        <p class="section-subtitle">Recruiter-relevant core competencies and technical skills verified in this project.</p>
+        <div class="skills-flex"><span class="skill-tag"><i class="fa-solid fa-code"></i> C++17</span> <span class="skill-tag"><i class="fa-solid fa-tree"></i> Data Structures & Algorithms</span> <span class="skill-tag"><i class="fa-solid fa-memory"></i> RAII Memory Management</span> <span class="skill-tag"><i class="fa-solid fa-gauge-high"></i> Algorithm Benchmarking</span> <span class="skill-tag"><i class="fa-solid fa-gears"></i> CMake Build System</span></div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Key Technical Features</h2>
+        <p class="section-subtitle">Core functionality and engineering standards implemented in the codebase.</p>
         <div class="grid-cards">
         <div class="card">
             <div class="card-icon"><i class="fa-solid fa-tree"></i></div>
-            <h3>Self-Balancing AVL</h3>
-            <p>O(log N) guaranteed lookup via Left/Right tree rotations.</p>
+            <h3>Self-Balancing AVL Tree</h3>
+            <p>Guaranteed O(log N) search and insertion via Left/Right tree rotations.</p>
         </div>
     
         <div class="card">
             <div class="card-icon"><i class="fa-solid fa-memory"></i></div>
             <h3>RAII Destructors</h3>
-            <p>Post-order recursive cleanup guaranteeing zero dynamic memory leaks.</p>
+            <p>Post-order tree traversal cleanup eliminating dynamic memory leaks.</p>
         </div>
     
         <div class="card">
             <div class="card-icon"><i class="fa-solid fa-gauge-high"></i></div>
-            <h3>Performance Benchmark</h3>
-            <p>Comparative speed testing between worst-case BST and AVL trees.</p>
+            <h3>Performance Benchmarking</h3>
+            <p>Comparative speed metrics analyzing BST worst-case vs AVL balance.</p>
         </div>
     </div>
     </section>
 
     <section class="container">
-        <h2 class="section-title">System Architecture</h2>
-        <p class="section-subtitle">Structural component workflow and module dependencies.</p>
-        <svg class="svg-diagram" viewBox="0 0 800 220">
-    <circle cx="400" cy="40" r="28" fill="#131c2e" stroke="#38bdf8" stroke-width="2"/>
-    <text x="400" y="45" fill="#fff" font-weight="bold" text-anchor="middle">50 (B=0)</text>
+        <h2 class="section-title">System Architecture Diagram</h2>
+        <p class="section-subtitle">Clean structural component overview rendered via inline SVG vector graphics.</p>
+        <svg class="svg-diagram" viewBox="0 0 850 220">
+        <circle cx="425" cy="40" r="28" fill="#111827" stroke="#38bdf8" stroke-width="2"/>
+        <text x="425" y="45" fill="#fff" font-weight="bold" text-anchor="middle">50 (B=0)</text>
 
-    <line x1="380" y1="60" x2="250" y2="110" stroke="#38bdf8" stroke-width="2"/>
-    <line x1="420" y1="60" x2="550" y2="110" stroke="#38bdf8" stroke-width="2"/>
+        <line x1="405" y1="60" x2="275" y2="110" stroke="#38bdf8" stroke-width="2"/>
+        <line x1="445" y1="60" x2="575" y2="110" stroke="#38bdf8" stroke-width="2"/>
 
-    <circle cx="250" cy="130" r="28" fill="#131c2e" stroke="#4ade80" stroke-width="2"/>
-    <text x="250" y="135" fill="#fff" font-weight="bold" text-anchor="middle">30 (B=0)</text>
+        <circle cx="275" cy="130" r="28" fill="#111827" stroke="#4ade80" stroke-width="2"/>
+        <text x="275" y="135" fill="#fff" font-weight="bold" text-anchor="middle">30 (B=0)</text>
 
-    <circle cx="550" cy="130" r="28" fill="#131c2e" stroke="#4ade80" stroke-width="2"/>
-    <text x="550" y="135" fill="#fff" font-weight="bold" text-anchor="middle">70 (B=0)</text>
-</svg>
+        <circle cx="575" cy="130" r="28" fill="#111827" stroke="#4ade80" stroke-width="2"/>
+        <text x="575" y="135" fill="#fff" font-weight="bold" text-anchor="middle">70 (B=0)</text>
+    </svg>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Project Engineering Workflow</h2>
+        <p class="section-subtitle">Systematic development life cycle methodology from research to production testing.</p>
+        <div class="workflow-timeline">
+            <div class="workflow-step"><h4>1. Research</h4><p>Requirements & Domain Analysis</p></div>
+            <div class="workflow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="workflow-step"><h4>2. Design</h4><p>Architecture & Data Models</p></div>
+            <div class="workflow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="workflow-step"><h4>3. Build</h4><p>Implementation & Refactoring</p></div>
+            <div class="workflow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="workflow-step"><h4>4. Testing</h4><p>Unit & Integration Test Suites</p></div>
+            <div class="workflow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="workflow-step"><h4>5. Result</h4><p>Recruiter-Ready Codebase</p></div>
+        </div>
     </section>
 
     <section id="demo" class="container">
         <h2 class="section-title">Interactive Project Simulator</h2>
-        <p class="section-subtitle">Test and explore the system algorithms and workflows directly in your browser.</p>
+        <p class="section-subtitle">Test and explore the application workflows directly in your browser.</p>
         <div class="demo-window">
             <div class="demo-header">
                 <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
                 <div class="demo-title">hospital-patient-management-system-dsa — Interactive Workbench</div>
             </div>
             <div class="demo-body">
-<div class="control-row">
-    <input type="number" id="patientId" value="45" placeholder="Patient ID" style="width:120px;">
-    <button class="btn btn-primary" onclick="insertPatient()">Insert Patient (AVL Balance)</button>
-    <button class="btn btn-secondary" onclick="runBenchmark()">Run BST vs AVL Benchmark</button>
-</div>
-<div id="dsaOut" class="terminal-output">$ Enter Patient ID to test AVL Tree rotation balancing...</div>
-</div>
+        <div class="control-row">
+            <input type="number" id="patientId" value="45" placeholder="Patient ID" style="width:140px;">
+            <button class="btn btn-primary" onclick="insertPatient()">Insert Patient (AVL Balance)</button>
+            <button class="btn btn-secondary" onclick="runBenchmark()">Run BST vs AVL Benchmark</button>
+        </div>
+        <div id="dsaOut" class="terminal-output">$ Enter Patient ID to test AVL Tree rotation balancing...</div>
+    </div>
         </div>
     </section>
 
     <section class="container">
         <details class="engineering-drawer">
-            <summary><i class="fa-solid fa-terminal"></i> Engineering Setup & Build Steps</summary>
+            <summary><i class="fa-solid fa-terminal"></i> Engineering Details, Installation & Build Commands</summary>
             <div class="drawer-content">
                 <pre><code>mkdir build && cd build
 cmake ..
@@ -99,7 +152,7 @@ make && ctest --output-on-failure</code></pre>
 
     <footer>
         <div class="container">
-            <p>© 2026 Tahniat Farhan — BS Cyber Security, UET Lahore | MIT License</p>
+            <p>© 2026 Tahniat Farhan — BS Cyber Security, UET Lahore | GitHub Portfolio</p>
         </div>
     </footer>
 
