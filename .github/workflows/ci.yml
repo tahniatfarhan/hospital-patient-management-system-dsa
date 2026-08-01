@@ -1,0 +1,24 @@
+name: C++ CMake CI Suite
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Source Code
+      uses: actions/checkout@v4
+
+    - name: Configure CMake with Compiler Warnings
+      run: cmake -B build -DCMAKE_BUILD_TYPE=Debug
+
+    - name: Build C++ Binaries
+      run: cmake --build build
+
+    - name: Execute C++ Unit Tests
+      run: ctest --test-dir build --output-on-failure
